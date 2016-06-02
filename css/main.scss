@@ -1,0 +1,285 @@
+@import "helpers/variables";
+
+
+*{
+	font-family: Source Sans Pro;
+}
+#header{
+	background-image: url("../img/infinito.gif");
+	background-size: cover;
+	height: 667px;
+	.nombre{
+		color: $colorw;
+		text-align: center;
+		font-size: 100px;
+		margin-top: $top;
+		font-weight: 300;
+	}
+	#menu{
+		 position: fixed;
+		#navigationMenu li{
+			list-style:none;
+			height:39px;
+			width:50px;
+			display:inline-block;
+			margin-top: 10%;
+		}
+
+		#navigationMenu a{
+			height:39px;
+			width:35px;
+			position:relative;
+		}
+
+	}
+
+}
+#sobreMi{
+	background-color: #048390;
+	height: 470px;
+	.txt{
+		margin-top: $top-5;
+		img{
+			margin-top: $top-5;
+			width: 100%; 
+		}
+		h2{
+			color: $colorw;
+			font-weight: 300;
+			font-size: 50px;
+			text-align: center;
+		}
+		p{
+			color: $colorw;
+			margin-top: $top;
+			font-weight: 400;
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+}
+#herramientas{
+	background-color: $colorw;
+	height: 400px;
+	h2{
+		color: gray;
+		font-weight: 300;
+		font-size: 50px;
+		text-align: center;
+		margin-top: 3%;
+	}
+	@include circulos;
+
+}
+#proyectos{
+	background-color: #AABFB9;
+	.bg-txt{
+		background-color: #AABFB9;
+		height: $img;
+	}
+	.h3{
+		color: $colorw;
+		font-size: 25px;
+		font-weight: 600;
+		text-align: center;
+		margin-top: 14%;
+	}
+	h3{
+		color: $colorw;
+		font-size: 25px;
+		font-weight: 600;
+		text-align: center;
+		margin-top: 30%;
+	}
+	hr{
+		width: 60%;
+	}
+	h2{
+		color: $colorw;
+		font-weight: 300;
+		font-size: 50px;
+		text-align: center;
+		margin-top: 30%;
+	}
+	.img-b{
+		background-image: url("../img/bg.jpg");
+		background-blend-mode: color-burn;
+    	background-color: rgba(64, 224, 208,0.53);
+		background-size: cover;
+		height: $img;
+		
+	}
+	.img-l{
+		background-image: url("../img/large.jpg");
+		background-blend-mode: color;
+    	background-color: rgba(0, 0, 0, 0.3);
+    	background-size: cover;
+		height: $img;
+		
+	}
+	.img-p{
+		background-blend-mode: color-burn;
+    	background-color: rgba(255, 135, 139,0.53);
+		background-image: url("../img/post1.png");
+		background-size: cover;
+		height: $img;
+	}
+	.img-s1{
+		background-image: url("../img/slider1.jpg");
+		background-blend-mode: color-dodge;
+    	background-color: rgba(101, 46, 97,0.5);
+		background-size: cover;
+		height: $img;
+	}
+	.img-e{
+		background-image: url("../img/semilla.jpg");
+		background-blend-mode: color-burn;
+    	background-color: rgba(125, 255, 59, 0.27);
+		background-size: cover;
+		height: $img;
+	}
+}
+#frase{
+	background-image: url("../img/compu.jpg");
+	height: 220px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.3);
+    p{
+    	color: #dadada;
+		margin-top: 4%;
+		font-weight: 400;
+		font-size: 25px;
+		text-align: center;
+    }
+    .txt2{
+    	text-align: right;
+    }
+}
+#contacto{
+	background-color: #329c98;
+	height: 370px;
+	h2{
+			color: black;
+			font-weight: 300;
+			font-size: 50px;
+			text-align: center;
+		}
+	img{
+		width: 50%;
+		margin-top: 10%;
+		margin-left: 25%;
+	}
+	.tel{
+		color: black;
+		font-size: 20px;
+		font-weight: 600;
+		text-align: center;
+		border: 2px  dashed black;
+		margin-top: 5%;
+		padding: 5px;
+
+	}
+}
+#footer{
+	background-color: #272728;
+	padding: 10px;
+	h4{
+		color: $colorw;
+		text-align: center;
+		font-weight: 300;
+	}
+}
+.modal-content{
+	padding: 3%;
+	background-color: #f0f0f0 !important;
+	h4{
+		font-size: 30px;
+		font-weight: 400;
+	}
+	.btn-arriba{
+		position: fixed;
+		bottom: 0;
+		right: 10px;
+		cursor: pointer;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	#header{
+		background-image: url("../img/infinito.gif");
+		background-size: 200% 200%;
+		background-position: center;
+		height: 400px;
+	.nombre{
+			color: $colorw;
+			text-align: center;
+			font-size: 70px;
+			font-weight: 300;
+		}
+	}
+	#sobreMi{
+	background-color: #048390;
+	height: 520px;
+	.txt{
+		margin-top: 3%;
+		img{
+			margin-top: $top-5;
+			width: 100%; 
+		}
+		h2{
+			color: $colorw;
+			font-weight: 300;
+			font-size: 50px;
+			text-align: center;
+		}
+		p{
+			color: $colorw;
+			margin-top: $top;
+			font-weight: 400;
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+}
+	#herramientas{
+		background-color: $colorw;
+		height: 1360px;
+		h2{
+			color: gray;
+			font-weight: 300;
+			font-size: 50px;
+			text-align: center;
+			margin-top: 3%;
+		}
+		@include circulos;
+
+	}
+	#contacto{
+		background-color: #329c98;
+		height: 370px;
+		h2{
+			color: black;
+			font-weight: 300;
+			font-size: 40px;
+			text-align: center;
+			}
+		img{
+			width: 35%;
+			margin-top: 10%;
+			margin-left: 25%;
+		}
+		.tel{
+			color: black;
+			font-size: 12px;
+			font-weight: 600;
+			text-align: center;
+			border: 2px  dashed black;
+			margin-top: 5%;
+			padding: 5px;
+
+	}
+}
+}
